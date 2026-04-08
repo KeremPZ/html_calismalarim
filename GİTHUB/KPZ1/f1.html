@@ -26,32 +26,68 @@
     </header>
     <main>
       <section class="kutucuk">
-        <h1 class="bas">HOŞGELDİNİZ</h1>
-        <article id="sol" class="kutucuk">
-          <a href="ÖDEV_1.html"
-            ><span>
-              <h2 class="bas2">ÖDEV_1</h2>
-            </span>
-            <h3 style="display: flex; justify-content: center; padding: 1em">
-              Ah şu lanet olası kutular
-            </h3>
-          </a>
-        </article>
-        
-        <article id="sol" class="kutucuk">
-          <a href="f1.html"><h2 class="bas2" style="display: flex; justify-content: center;">
-            <img
+        <h1 class="bas" style="color: var(--KeremPZ-F1);  "><img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1920px-F1.svg.png"
               alt="F1"
               style="width: 100px"
-            /> F1 Miami Grand Prix</h2>
-          <h3 style="display: flex; justify-content: center; padding: 1em">
-            3 May Paz 23:00'te yapılıcak olan Miami GP'yi canlı yayınlayacağız. F1'in en hızlı ve en heyecanlı yarışlarından biri olan Miami GP'de, pilotların hız ve strateji mücadelesine tanık olacağız. Bu büyük yarışı kaçırmayın, bizimle birlikte analiz etmeye ve heyecana ortak olmaya davetlisiniz!
-            biletleri bu sayfadan alabilirsiniz.
-          </h3>
-          </a>
-        </article>
-        
+            /> F1 Miami Grand Prix</h1>
+                <h2 class="bas" style="display: flex; justify-content: center;">Bilet Hesaplama Sistemi</h2>
+        <form action="" method="post" class="alim">
+          <div class="input-group">
+          <label for="name">
+            İsim:
+            <input type="text" id="name" name="name" required  placeholder="Adınız lütfen"/>
+          </label>
+          </div>
+          <div>
+          <label for="sirname">
+            Soyadınız:
+            <input type="text" id="sirname" name="sirname" required  placeholder="Soyadınız lütfen"/>
+          </label>
+          </div>
+          <div>
+          <label for="email">
+            E-mail:
+            <input type="email" id="email" name="email" required  placeholder="E-mail adresiniz lütfen"/>
+          </label>
+          </div>
+          <div>
+          <label for="age">
+            Yaşınız:
+            <input type="number" id="age" name="age" required  placeholder="Yaşınız lütfen" />
+          </label>
+          </div>
+          <div>
+          <label for="ticket">
+            Bilet Türü:
+            <select id="ticket" name="ticket" required>
+              <option value="">Bilet türünüzü seçiniz</option>
+              <option value="general">Genel Giriş - 1000₺</option>
+              <option value="vip">VIP - 5000₺</option>
+              <option value="vvip">VVIP - 10000₺</option>
+            </select>
+          </label>
+          </div>
+          <div>
+          <button type="submit">Hesapla</button>
+          </div>
+        </form>
+        <div  style="margin-top: 50px;">
+    <h2 class="bas" style="text-align: center; border: none; box-shadow: none;">🏎️ Yarıştan Sonra Miami Turu</h2>
+    
+    <div style="margin-bottom: 40px;">
+        <img src="https://images.unsplash.com/photo-1514214246283-d427a95c5d2f" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px;">
+        <h3 style="margin-top: 15px; font-size: 1.8em;">South Beach & Ocean Drive</h3>
+        <p style="font-size: 1.1em; line-height: 1.6;">Okyanusun dibinde, neon ışıkların altında Miami'nin gerçek ruhunu hisset. Burası 7/24 yaşayan bir efsane.</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px;">
+        <h3 style="margin-top: 15px; font-size: 1.8em;">Wynwood Art District</h3>
+        <p style="font-size: 1.1em; line-height: 1.6;">Dünyanın en büyük açık hava sanat galerisi. Renklerin ve yaratıcılığın sınırı yok.</p>
+    </div>
+</div>
+
       </section>
       
 
@@ -123,5 +159,7 @@
     <footer>
       <p>&copy; 2026 KeremPZ | Built with ❤️ by Kanki</p>
     </footer>
+    <script src="hesapla.js"></script>
+
   </body>
 </html>
