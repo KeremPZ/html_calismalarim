@@ -268,3 +268,31 @@ button {
     border: 2px solid var(--KeremPZ-GRİİİ);
     
 }
+/* --- DARK MODE RENKLERİ --- */
+
+/* 1. Ana arka plan ve yazı rengi */
+body.dark-theme {
+    background-color: var(--KeremPZ-gecesiyahi);
+    color: var(--KeremPZ-BYZ);
+}
+
+/* 2. Kartlar, Header ve Yan Menü */
+body.dark-theme header,
+body.dark-theme section,
+body.dark-theme aside,
+body.dark-theme .kutucuk {
+    background-color: var(--KeremPZ-GRİİİ);
+    color: var(--KeremPZ-BYZ);
+}
+
+/* 3. Linkler ve alt başlıklar (Koyu modda daha belirgin olsunlar) */
+body.dark-theme a, 
+body.dark-theme h3 {
+    color: var(--KeremPZ-GRi);
+}
+
+/* 4. Butonun rengini de mod değiştikçe değiştirebilirsin */
+body.dark-theme #theme-toggle {
+    background-color: var(--KeremPZ-BYZ);
+    color: var(--KeremPZ-gecesiyahi);
+}
